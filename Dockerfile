@@ -24,6 +24,7 @@ RUN sudo chown -R coder:coder /home/coder/.local
 
 # Install apt packages:
 RUN sudo apt-get install -y python3 python3-venv python3-pip
+RUN sudo pip install justpy jupyterlab pandas
 
 # Install a VS Code extension:
 # Note: we use a different marketplace than VS Code. See https://github.com/cdr/code-server/blob/main/docs/FAQ.md#differences-compared-to-vs-code
